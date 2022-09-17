@@ -1,0 +1,5 @@
+# list
+sudo docker ps
+
+# stop
+sudo docker stop <name> && sudo docker rm <name>
