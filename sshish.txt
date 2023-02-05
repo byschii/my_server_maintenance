@@ -1,0 +1,2 @@
+# to kill connections
+(as sudo su -) pkill --signal HUP sshd
