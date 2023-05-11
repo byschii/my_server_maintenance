@@ -1,3 +1,5 @@
+sudo apt-get install jq -y
+
 datetime=$(date +"%Y-%m-%d %H:%M:%S")
 
 cpu_usage=$(top -bn 1 | awk '/^%Cpu/{printf "{\"us\":%s, \"sy\":%s, \"id\":%s, \"wa\":%s}", $2, $4, $8, $10}')
